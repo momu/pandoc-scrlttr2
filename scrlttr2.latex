@@ -214,7 +214,7 @@ $endif$
 \KOMAoptions{frommobilephone=false}
 \KOMAoptions{fromphone=false}
 \KOMAoptions{fromurl=false}
-\KOMAoptions{fromalign=right}
+\KOMAoptions{fromalign=left}
 
 $for(letteroption)$
 \LoadLetterOption{$letteroption$}
