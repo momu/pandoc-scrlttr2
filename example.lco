@@ -1,5 +1,7 @@
 \ProvidesFile{example.lco}
 
+\@setplength{firstheadvpos}{17mm}
+
 \setkomavar{fromname}{John Doe}
 \setkomavar{fromaddress}{%
 	42 Main Street\\

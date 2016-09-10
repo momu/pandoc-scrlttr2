@@ -255,7 +255,7 @@ $if(closing)$\setkomavar{closing}{$closing$}$endif$
 $if(firstfoot)$\setkomavar{firstfoot}{$firstfoot$}$endif$
 
 
-
+\input{din5008frame.tex}
 
 \begin{document}
 
