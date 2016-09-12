@@ -254,7 +254,7 @@ $if(opening)$\setkomavar{opening}{$opening$}$endif$
 $if(closing)$\setkomavar{closing}{$closing$}$endif$
 $if(firstfoot)$\setkomavar{firstfoot}{$firstfoot$}$endif$
 
-
+\usepackage{adjustbox}
 
 
 \begin{document}

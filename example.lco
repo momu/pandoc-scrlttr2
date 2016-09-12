@@ -12,6 +12,15 @@
 \setkomavar{fromphone}{+1 888 555 4242}\KOMAoptions{fromphone=true}
 \setkomavar{fromurl}{http://www.example.org}\KOMAoptions{fromurl=true}
 
+\setkomavar{fromlogo}{%
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(0,0)
+	\put(42,-17){
+	    \adjincludegraphics[trim=50mm 247mm 122mm 38mm,clip,]{internetmarke_old.pdf}
+	}
+    \end{picture}
+}
+
 \setkomavar{place}{Anytown}
 
 \setkomavar{opening}{Dear Sir or Madam,}
