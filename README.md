@@ -73,7 +73,7 @@ Some more variables can be set: `lang` (which actually is the default Pandoc lan
 
 ## Letter Class Option Files
 
-`scrlttr2` supports letter class files, which have two purposes: on one hand, they offer layout presets, eg. for following norms like the German [DIN 676] (in German language); on the other they can be used to define presets.
+`scrlttr2` supports letter class files, which have two purposes: on one hand, they offer layout presets, eg. for following norms like the German [DIN 676][DIN 676] (in German language); on the other they can be used to define presets.
 
 If you want to define your own address or letter template, create your own letter class option file. This may either be stored in the working directory, or at the recommended location [`~/texmf/tex/latex/`][texmf]. Read the [KOMA-script manual] for more details. For an example, refer to `example.lco`.
 
@@ -90,7 +90,7 @@ Everything you set as default in a custom letter class option file can later be 
 
 ## Using German QR code postage stamps
 
-Go to [efiliale](in German language), get a stamp for _Standardbrief bis 20 g_ and choose _Mit Adresse(n)_. The address fields can be left empty. Save the downloaded PDF as `internetmarke.pdf` and put `internetmarke: internetmarke.pdf` into the YAML block.
+Go to https://www.efiliale.de (in German language) get a stamp for _Standardbrief bis 20 g_ and choose _Mit Adresse(n)_. The address fields can be left empty. Save the downloaded PDF as `internetmarke.pdf` and put `internetmarke: internetmarke.pdf` into the YAML block.
 
 ## Copyright
 
@@ -141,4 +141,3 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [KOMA-script manual]: http://ctan.mackichan.com/macros/latex/contrib/koma-script/doc/scrguien.pdf
 [DIN 676]: http://de.wikipedia.org/wiki/DIN_676
 [texmf]: http://tex.stackexchange.com/q/81710/11198
-[efiliale]: https://www.efiliale.de
