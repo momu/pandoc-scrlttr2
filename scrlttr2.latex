@@ -214,7 +214,7 @@ $endif$
 \KOMAoptions{frommobilephone=false}
 \KOMAoptions{fromphone=false}
 \KOMAoptions{fromurl=false}
-\KOMAoptions{fromalign=left}
+\KOMAoptions{fromalign=right}
 
 $for(letteroption)$
 \LoadLetterOption{$letteroption$}
@@ -254,10 +254,18 @@ $if(opening)$\setkomavar{opening}{$opening$}$endif$
 $if(closing)$\setkomavar{closing}{$closing$}$endif$
 $if(firstfoot)$\setkomavar{firstfoot}{$firstfoot$}$endif$
 
+$if(internetmarke)$
 \usepackage{adjustbox}
-
+\usepackage[absolute]{textpos} 
+$endif$
 
 \begin{document}
+
+$if(internetmarke)$
+\begin{textblock*}{38mm}(63mm,51mm)
+  \adjincludegraphics[trim=50mm 247mm 122mm 38mm,clip,]{$internetmarke$} 
+\end{textblock*} 
+$endif$
 
 \begin{letter}{%
 $to$

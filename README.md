@@ -4,7 +4,7 @@ This template extends [Pandoc]'s original LaTeX-template by parsing variables an
 
 ## Changelog
 
-- **2016-09-10**: https://www.efiliale.de/ mit Adresse 
+- **2016-09-14**: Add support for German QR code postage stamps. 
 - **2016-09-10**: Add KOMA-Script variables `fromaddress`, `fromalign` 
 - **2016-02-11**: Merged changes to Pandoc's `default.latex` template to fetch up with changes in Pandoc. Use [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language codes instead of the old bable names now, for example `en` or `en-US` instead of `english`, `de-DE` instead of `ngerman`.
 - **2015-12-30**: To and from address fields are now standard multiline markdown fields instead of lists, which is easier to read and handle and potentially available for all variables.
@@ -55,6 +55,7 @@ lang: english
 subject: subject
 opening: Dear Moss,
 closing: Sincerely,
+internetmarke: internetmarke.pdf
 ...
 ```
 
@@ -86,6 +87,10 @@ If you want to predefine opening and closing phrases, use the non-default `openi
 You can also completely omit them, then the template will include empty `\opening{}` and `\closing{}` commands.
 
 Everything you set as default in a custom letter class option file can later be overridden in the YAML metadata block. For example, you might have a default _"Dear Sir or Madam"_ opening in the option file, but can use a YAML block to change this to address somebody directly: `opening: Dear Moss` to address somebody directly.
+
+## Using German QR code postage stamps
+
+Go to [efiliale](in German language), get a stamp for _Standardbrief bis 20 g_ and choose _Mit Adresse(n)_. The address fields can be left empty. Save the downloaded PDF as `internetmarke.pdf` and put `internetmarke: internetmarke.pdf` into the YAML block.
 
 ## Copyright
 
@@ -136,3 +141,4 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [KOMA-script manual]: http://ctan.mackichan.com/macros/latex/contrib/koma-script/doc/scrguien.pdf
 [DIN 676]: http://de.wikipedia.org/wiki/DIN_676
 [texmf]: http://tex.stackexchange.com/q/81710/11198
+[efiliale]: https://www.efiliale.de

@@ -13,7 +13,7 @@ lang: en
 subject: Lorem Ipsum
 opening: Dear Moss,
 closing: Sincerely,
-fromalign: right
+internetmarke: internetmarke.pdf
 ...
 
 <!-- This is the actual letter content -->
